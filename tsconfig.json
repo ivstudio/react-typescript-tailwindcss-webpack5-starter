@@ -1,32 +1,32 @@
 {
-	"compilerOptions": {
-		"noEmit": true,
-		"baseUrl": ".",
-		"target": "esnext",
-		"lib": ["dom", "dom.iterable", "esnext"],
-		"module": "esnext",
-		"moduleResolution": "node",
-		"jsx": "react-jsx",
-		"declaration": true,
-		"outDir": "dist",
-		"allowJs": true,
-		"checkJs": false,
-		"strict": true,
-		"noImplicitAny": true,
-		"strictNullChecks": true,
-		"allowSyntheticDefaultImports": true,
-		"isolatedModules": true,
-		"esModuleInterop": true,
-		"skipLibCheck": true
-	},
-	"ts-node": {
-		"transpileOnly": true,
-		"files": true,
-		"compilerOptions": {
-			"module": "commonjs"
-		}
-	},
-	"include": ["src/**/*", "*.config.ts"]
+    "compilerOptions": {
+        "noEmit": true,
+        "baseUrl": ".",
+        "target": "esnext",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "jsx": "react-jsx",
+        "declaration": true,
+        "outDir": "dist",
+        "allowJs": true,
+        "checkJs": false,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true
+    },
+    "ts-node": {
+        "transpileOnly": true,
+        "files": true,
+        "compilerOptions": {
+            "module": "commonjs"
+        }
+    },
+    "include": ["src/**/*", "*.config.ts"]
 }
 
 /* Comments:
