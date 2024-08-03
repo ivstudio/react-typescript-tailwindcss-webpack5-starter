@@ -1,0 +1,65 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript compiled output
+dist/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Webpack cache
+.cache/
+.cache-loader/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# MacOS files
+.DS_Store
+
+# VSCode files
+.vscode/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# IDE specific files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional stylelint cache
+.stylelintcache
