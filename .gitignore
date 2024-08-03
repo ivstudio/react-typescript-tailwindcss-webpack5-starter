@@ -47,8 +47,7 @@ build/
 # MacOS files
 .DS_Store
 
-# VSCode files
-.vscode/
+
 
 # Coverage directory used by tools like istanbul
 coverage/
