@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from './components/Button';
-import Container from './components/Container';
-import Text from './components/Text';
+import Button from '@/components/Button';
+import Container from '@/components/Container';
+import Text from '@/components/Text';
 
 const App = () => {
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {

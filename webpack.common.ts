@@ -8,8 +8,8 @@ const commonConfig: webpack.Configuration = {
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[contenthash].js',
-        assetModuleFilename: 'images/[name].[hash][ext][query]',
+        filename: 'js/[name].[contenthash].js',
+        assetModuleFilename: 'assets/[name].[hash][ext][query]',
     },
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -55,8 +55,8 @@ const commonConfig: webpack.Configuration = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[path][name].[hash:base64:5].[ext]',
-                            outputPath: 'assets',
+                            name: 'assets/[path][name].[hash:base64:5].[ext]',
+                            context: 'src',
                         },
                     },
                 ],
@@ -69,8 +69,8 @@ const commonConfig: webpack.Configuration = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
-            chunkFilename: '[id].css',
+            filename: 'css/[name].[contenthash].css',
+            chunkFilename: 'css/[id].css',
             ignoreOrder: false,
         }),
     ],

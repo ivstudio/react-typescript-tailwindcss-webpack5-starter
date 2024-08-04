@@ -17,7 +17,10 @@
         "allowSyntheticDefaultImports": true,
         "isolatedModules": true,
         "esModuleInterop": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "paths": {
+            "@/*": ["src/*"]
+        }
     },
     "ts-node": {
         "transpileOnly": true,
