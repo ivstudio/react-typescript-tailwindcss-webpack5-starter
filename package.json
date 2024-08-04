@@ -1,8 +1,7 @@
 {
     "name": "react-typescript-tailwindcss-webpack5-starter",
+    "description": "React 18, TypeScript, Tailwind CSS, and Webpack 5 starter template.",
     "version": "1.0.0",
-    "description": "React 18 start template featuring TypeScript, Tailwind CSS, and Webpack 5. ",
-    "main": "index.js",
     "scripts": {
         "start": "webpack serve --config webpack.dev.ts",
         "build": "webpack --config webpack.prod.ts",
@@ -12,11 +11,20 @@
     "keywords": [
         "react 18",
         "typescript",
+        "tailwindcss",
         "webpack 5",
         "starter"
     ],
-    "author": "ivstudio <iggy@ivstudio.com>",
-    "license": "ISC",
+    "author": {
+        "name": "Ignacio Villamar",
+        "email": "iggy@ivstudio.com",
+        "url": "https://github.com/ivstudio"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
     "devDependencies": {
         "@babel/core": "^7.25.2",
         "@babel/plugin-transform-runtime": "^7.24.7",
@@ -51,9 +59,5 @@
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^5.0.4",
         "webpack-merge": "^6.0.1"
-    },
-    "dependencies": {
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1"
     }
 }

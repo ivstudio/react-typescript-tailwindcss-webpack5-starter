@@ -1,6 +1,6 @@
 # React TypeScript TailwindCSS and Webpack5 Starter
 
-A starter template for [React 18](https://reactjs.org/) projects using [TypeScript](https://www.typescriptlang.org/), [TailwindCSS](https://tailwindcss.com/), and [Webpack 5](https://webpack.js.org/), designed for a streamlined development experience and optimal production performance.
+A [React 18](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/), [TailwindCSS](https://tailwindcss.com/), and [Webpack 5](https://webpack.js.org/) starter template, designed for a streamlined development experience and optimal production performance.
 
 ## Tools and Technologies
 
