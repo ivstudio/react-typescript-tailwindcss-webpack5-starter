@@ -50,8 +50,16 @@ const commonConfig: webpack.Configuration = {
                 ],
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,
-                type: 'asset/resource',
+                test: /\.(png|jpg|gif|svg|webp)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[hash:base64:5].[ext]',
+                            outputPath: 'assets',
+                        },
+                    },
+                ],
             },
         ],
     },
