@@ -8,8 +8,10 @@ const commonConfig: webpack.Configuration = {
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/[name].[contenthash].js',
+        filename: '[name].[contenthash].js',
+        chunkFilename: '[name].[contenthash].bundle.js',
         assetModuleFilename: 'assets/[name].[hash][ext][query]',
+        clean: true,
     },
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],

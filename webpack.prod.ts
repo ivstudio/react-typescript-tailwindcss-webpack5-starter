@@ -3,6 +3,8 @@ import commonConfig from './webpack.common';
 import TerserPlugin from 'terser-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import webpack from 'webpack';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+const isAnalyze = process.env.ANALYZE === 'true';
 
 const prodConfig: webpack.Configuration = {
     mode: 'production',
@@ -33,12 +35,49 @@ const prodConfig: webpack.Configuration = {
         ],
         splitChunks: {
             chunks: 'all',
+            cacheGroups: {
+                reactVendor: {
+                    test: /[\\/]node_modules[\\/](react|react-dom|react-router-dom)[\\/]/,
+                    name: 'vendor-react',
+                    chunks: 'all',
+                    priority: 30,
+                    enforce: true,
+                },
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendor-libs',
+                    chunks: 'all',
+                    priority: 20,
+                    reuseExistingChunk: true,
+                    enforce: true,
+                },
+                common: {
+                    test: /[\\/]src[\\/]/,
+                    name: 'common',
+                    chunks: 'all',
+                    minChunks: 2,
+                    priority: 10,
+                    reuseExistingChunk: true,
+                    enforce: true,
+                },
+            },
         },
     },
     plugins: [
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production'),
         }),
+        ...(isAnalyze
+            ? [
+                  new BundleAnalyzerPlugin({
+                      analyzerMode: 'static',
+                      logLevel: 'info',
+                      defaultSizes: 'gzip',
+                      generateStatsFile: true,
+                      reportFilename: 'bundle-analyzer.html',
+                  }),
+              ]
+            : []),
     ],
 };
 
