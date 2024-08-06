@@ -4,6 +4,7 @@ import TerserPlugin from 'terser-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import webpack from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import CompressionPlugin from 'compression-webpack-plugin';
 const isAnalyze = process.env.ANALYZE === 'true';
 
 const prodConfig: webpack.Configuration = {
@@ -66,6 +67,13 @@ const prodConfig: webpack.Configuration = {
     plugins: [
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production'),
+        }),
+        new CompressionPlugin({
+            filename: '[path][base].gz',
+            algorithm: 'gzip',
+            test: /\.(js|css|html|svg)$/,
+            threshold: 8192,
+            minRatio: 0.8,
         }),
         ...(isAnalyze
             ? [
