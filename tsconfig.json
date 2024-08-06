@@ -20,7 +20,8 @@
         "skipLibCheck": true,
         "paths": {
             "@/*": ["src/*"]
-        }
+        },
+        "types": ["node", "@testing-library/jest-dom"]
     },
     "ts-node": {
         "transpileOnly": true,
