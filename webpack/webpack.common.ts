@@ -5,9 +5,10 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
 
 const commonConfig: webpack.Configuration = {
+    context: path.resolve(__dirname, '../'),
     entry: './src/index.tsx',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, '../dist'),
         filename: '[name].[contenthash].js',
         chunkFilename: '[name].[contenthash].bundle.js',
         assetModuleFilename: 'assets/[name].[hash][ext][query]',
@@ -16,7 +17,7 @@ const commonConfig: webpack.Configuration = {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
-            '@': path.resolve(__dirname, 'src'),
+            '@': path.resolve(__dirname, '../src'),
         },
     },
     module: {
