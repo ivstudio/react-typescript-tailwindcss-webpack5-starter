@@ -1,4 +1,4 @@
-# React 18 TypeScript TailwindCSS and Webpack 5 Starter kit
+# React 18, TypeScript, Tailwind CSS, and Webpack 5 starter template.
 
 Starter template built with React 18, TypeScript, and TailwindCSS, bundled with Webpack 5. It’s designed to deliver a seamless development experience and is optimized for superior performance in production.
 
