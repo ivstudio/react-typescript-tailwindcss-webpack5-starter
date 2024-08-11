@@ -1,7 +1,5 @@
 import React from 'react';
 import Button from '@/components/Button';
-import Container from '@/components/Container';
-import Text from '@/components/Text';
 
 const App = () => {
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -9,19 +7,16 @@ const App = () => {
     };
 
     return (
-        <Container tag="main">
-            <Text tag="h1" variant="title" className="mb-4">
+        <main className="mx-auto bg-slate-950 min-h-screen flex flex-col items-center justify-center">
+            <h1 className="mb-4 text-5xl md:text-6xl lg:text-8xl font-extrabold tracking-tight text-white">
                 Starter Template
-            </Text>
-            <Text
-                variant="subtitle"
-                className="mb-8 max-w-[320px] md:max-w-full text-center"
-            >
+            </h1>
+            <p className="mb-8 max-w-[320px] md:max-w-full text-center text-base md:text-lg lg:text-xl font-light text-slate-400">
                 A starter template with React, TypeScript, Tailwind CSS, and
                 Webpack.
-            </Text>
+            </p>
             <Button onClick={handleClick}>SEND MESSAGE</Button>
-        </Container>
+        </main>
     );
 };
 
