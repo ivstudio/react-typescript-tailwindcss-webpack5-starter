@@ -1,28 +1,41 @@
-import globals from 'globals';
+import eslintGlobals from 'globals';
 import pluginJs from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import pluginTs from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
-import prettier from 'eslint-config-prettier';
+import tsParser from '@typescript-eslint/parser';
+import pluginTailwindcss from 'eslint-plugin-tailwindcss';
 import pluginPrettier from 'eslint-plugin-prettier';
 
 export default [
-    { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-    { languageOptions: { globals: globals.browser } },
-    pluginJs.configs.recommended,
-    ...tseslint.configs.recommended,
     {
-        ...pluginReact.configs.flat.recommended,
-        rules: {
-            'react/react-in-jsx-scope': 'off',
+        files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+        ignores: ['node_modules/', 'dist/'],
+        languageOptions: {
+            parser: tsParser,
+            globals: {
+                ...eslintGlobals.browser,
+                ...eslintGlobals.jest,
+            },
         },
-    },
-    prettier,
-    {
         plugins: {
+            js: pluginJs,
+            ts: pluginTs,
+            react: pluginReact,
+            tailwindcss: pluginTailwindcss,
             prettier: pluginPrettier,
         },
+        settings: {
+            react: {
+                version: 'detect',
+            },
+        },
         rules: {
+            ...pluginJs.configs.recommended.rules,
+            ...pluginTs.configs.recommended.rules,
+            ...pluginReact.configs.flat.recommended.rules,
+            ...pluginTailwindcss.configs.recommended.rules,
             'prettier/prettier': 'error',
+            'react/react-in-jsx-scope': 'off',
         },
     },
 ];
