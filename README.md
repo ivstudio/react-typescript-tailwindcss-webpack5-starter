@@ -19,7 +19,7 @@ Starter template built with React 18, TypeScript, and TailwindCSS, bundled with 
 
 ### Requirements
 
-- Before starting, ensure you have [Node.js](https://nodejs.org/) v21.x or later and npm installed.
+- Before starting, ensure you have [Node.js](https://nodejs.org/) v22.x or later and npm installed.
 
 
 ## Getting Started
