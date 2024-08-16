@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './Button.styles';
 
 type Variant = 'primary' | 'secondary';
