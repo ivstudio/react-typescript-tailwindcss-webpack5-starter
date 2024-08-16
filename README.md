@@ -1,9 +1,8 @@
 # React 18, TypeScript, Tailwind CSS, and Webpack 5 starter template
 
-Starter template built with React 18, TypeScript, and TailwindCSS, bundled with Webpack 5. It’s designed to deliver a seamless development experience and is optimized for superior performance in production.
+Starter template using React 18, TypeScript, TailwindCSS, and Webpack 5, optimized for seamless development and efficient production builds.
 
 <a href="https://twitter.com/ivstudio"><img src="https://img.shields.io/twitter/follow/ivstudio.svg?style=social&label=Follow&maxAge=3600" height="20"></a>
-
 
 ## Tech Stack
 
@@ -16,11 +15,9 @@ Starter template built with React 18, TypeScript, and TailwindCSS, bundled with 
 - [Jest](https://jestjs.io/)
 - [Testing Library](https://testing-library.com/docs/react-testing-library/intro/)  
 
-
 ### Requirements
 
 - Before starting, ensure you have [Node.js](https://nodejs.org/) v22.x or later and npm installed.
-
 
 ## Getting Started
 
@@ -52,8 +49,6 @@ The production build generates an optimized output in the `dist/` directory, rea
 - Format the code with Prettier, following specified style guidelines.  
 `npm run format`  
 
-
 ---
-
 
 <p align="center"><sup>Made with ♥ by <a href="https://ivstudio.com">ivstudio</a></sup></p>
