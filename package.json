@@ -1,7 +1,7 @@
 {
     "name": "react-typescript-tailwindcss-webpack5-starter",
-    "description": "React 18, TypeScript, Tailwind CSS, and Webpack 5 starter template.",
     "version": "1.0.0",
+    "description": "React 18, TypeScript, Tailwind CSS, and Webpack 5 starter template.",
     "keywords": [
         "react 18",
         "typescript",
@@ -9,26 +9,23 @@
         "webpack 5",
         "starter"
     ],
+    "license": "MIT",
     "author": {
         "name": "Ignacio Villamar",
         "email": "iggy@ivstudio.com",
         "url": "https://github.com/ivstudio"
     },
-    "license": "MIT",
     "scripts": {
         "start": "webpack serve --config webpack/webpack.dev.ts",
-        "build": "webpack --config webpack/webpack.prod.ts",
         "test": "jest",
+        "analyze": "ANALYZE=true npm run build",
+        "build": "webpack --config webpack/webpack.prod.ts",
         "coverage": "jest --coverage",
+        "format": "prettier --write src",
         "lint": "eslint ./src",
         "lint:debug": "eslint ./src --debug",
         "lint:fix": "eslint ./src --fix",
-        "format": "prettier --write src",
-        "analyze": "ANALYZE=true npm run build",
         "prepare": "husky"
-    },
-    "engines": {
-        "node": ">=22.0.0"
     },
     "dependencies": {
         "react": "^18.3.1",
@@ -86,5 +83,8 @@
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^5.0.4",
         "webpack-merge": "^6.0.1"
+    },
+    "engines": {
+        "node": ">=22.0.0"
     }
 }
