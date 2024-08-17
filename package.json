@@ -11,7 +11,8 @@
         "lint:debug": "eslint ./src --debug",
         "lint:fix": "eslint ./src --fix",
         "format": "prettier --write src",
-        "analyze": "ANALYZE=true npm run build"
+        "analyze": "ANALYZE=true npm run build",
+        "prepare": "husky"
     },
     "keywords": [
         "react 18",
