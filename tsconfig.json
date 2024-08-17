@@ -1,10 +1,9 @@
 {
     "compilerOptions": {
         "noEmit": true,
-        "baseUrl": ".",
-        "target": "esnext",
-        "lib": ["dom", "dom.iterable", "esnext"],
-        "module": "esnext",
+        "target": "ESNext",
+        "lib": ["dom", "dom.iterable", "ESNext"],
+        "module": "ESNext",
         "moduleResolution": "node",
         "jsx": "react-jsx",
         "declaration": true,
@@ -18,6 +17,7 @@
         "isolatedModules": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
+        "baseUrl": ".",
         "paths": {
             "@/*": ["src/*"]
         },
@@ -27,10 +27,10 @@
         "transpileOnly": true,
         "files": true,
         "compilerOptions": {
-            "module": "commonjs"
+            "module": "CommonJS"
         }
     },
-    "include": ["src/**/*", "*.config.ts"]
+    "include": ["src/**/*"]
 }
 
 

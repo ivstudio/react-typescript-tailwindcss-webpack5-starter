@@ -21,7 +21,7 @@ Starter template using React 18, TypeScript, TailwindCSS, and Webpack 5, optimiz
 
 ## Getting Started
 
-1. Clone the project
+1. Clone project or click use this template
 2. `npm install`
 3. `npm start`
 
@@ -48,6 +48,11 @@ The production build generates an optimized output in the `dist/` directory, rea
 
 - Format the code with Prettier, following specified style guidelines.  
 `npm run format`  
+
+## Pre-commit Hook
+
+Husky is used to run pre-commit hooks to ensure code quality before commits.  
+Modify the hook as needed by editing the `.husky/pre-commit` file.
 
 ---
 
