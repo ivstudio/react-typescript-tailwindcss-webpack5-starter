@@ -10,6 +10,7 @@
         "starter"
     ],
     "license": "MIT",
+    "homepage": "https://ivstudio.github.io/react-typescript-tailwindcss-webpack5-starter",
     "author": {
         "name": "Ignacio Villamar",
         "email": "iggy@ivstudio.com",
