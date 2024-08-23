@@ -15,6 +15,7 @@
         "email": "iggy@ivstudio.com",
         "url": "https://github.com/ivstudio"
     },
+    "homepage": "https://ivstudio.github.io/react-typescript-tailwindcss-webpack5-starter",
     "scripts": {
         "start": "webpack serve --config webpack/webpack.dev.ts",
         "test": "jest",
