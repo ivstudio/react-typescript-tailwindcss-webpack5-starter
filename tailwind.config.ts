@@ -2,7 +2,7 @@ import { Config } from 'tailwindcss';
 import { PluginAPI } from 'tailwindcss/types/config';
 
 const config: Config = {
-    content: ['./src/**/*.{js,jsx,ts,tsx}'],
+    content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
     theme: {
         extend: {},
     },
