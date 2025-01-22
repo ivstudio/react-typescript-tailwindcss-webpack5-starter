@@ -58,7 +58,7 @@
         "css-minimizer-webpack-plugin": "^7.0.0",
         "eslint": "^9.18.0",
         "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-prettier": "^5.2.3",
         "eslint-plugin-react": "^7.37.4",
         "eslint-plugin-simple-import-sort": "^12.1.1",
         "eslint-plugin-tailwindcss": "^3.17.5",
