@@ -1,12 +1,12 @@
-# React 18, TypeScript, Tailwind CSS, and Webpack 5 starter template
+# React 19, TypeScript, Tailwind CSS, and Webpack 5 starter template
 
-Starter template using React 18, TypeScript, TailwindCSS, and Webpack 5, optimized for seamless development and efficient production builds.
+Starter template using React 19, TypeScript, TailwindCSS, and Webpack 5, optimized for seamless development and efficient production builds.
 
 <a href="https://twitter.com/ivstudio"><img src="https://img.shields.io/twitter/follow/ivstudio.svg?style=social&label=Follow&maxAge=3600" height="20"></a>
 
 ## Tech Stack
 
-- [React 18](https://reactjs.org/)
+- [React 19](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Webpack 5](https://webpack.js.org/)
