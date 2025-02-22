@@ -1,9 +1,9 @@
 {
-    "name": "react-typescript-tailwindcss-webpack5-starter",
+    "name": "react-typescript-tailwindcss-webpack-starter",
     "version": "1.0.0",
-    "description": "React 18, TypeScript, Tailwind CSS, and Webpack 5 starter template.",
+    "description": "React 19, TypeScript, Tailwind CSS, and Webpack 5 starter template.",
     "keywords": [
-        "react 18",
+        "react 19",
         "typescript",
         "tailwindcss",
         "webpack 5",
