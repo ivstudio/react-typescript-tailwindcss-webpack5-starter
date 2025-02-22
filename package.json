@@ -1,12 +1,12 @@
 {
     "name": "react-typescript-tailwindcss-webpack-starter",
     "version": "1.0.0",
-    "description": "React 19, TypeScript, Tailwind CSS, and Webpack 5 starter template.",
+    "description": "React 19, TypeScript, Tailwind CSS, and Webpack 6 starter template.",
     "keywords": [
         "react 19",
         "typescript",
         "tailwindcss",
-        "webpack 5",
+        "webpack 6",
         "starter"
     ],
     "license": "MIT",
